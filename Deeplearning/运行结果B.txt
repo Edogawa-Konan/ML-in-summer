@@ -1,0 +1,451 @@
+
+两个卷积层+一个全连接层+采用柔性最大值+L2规范化参数lambda=0.1+使用修正线性单元
+这是该书中提到的最佳优化手段，可以看到最后达到了99%！
+GPU加速大概执行了5min
+
+
+
+
+D:\Anaconda\python.exe E:/pycharm/ML/Deeplearning/my_test.py
+WARNING (theano.sandbox.cuda): The cuda backend is deprecated and will be removed in the next release (v0.10).  Please switch to the gpuarray backend. You can get more information about how to switch at this URL:
+ https://github.com/Theano/Theano/wiki/Converting-to-the-new-gpu-back-end%28gpuarray%29
+
+Using gpu device 0: GeForce GTX 860M (CNMeM is enabled with initial size: 80.0% of memory, cuDNN 5110)
+Trying to run under a GPU.  If this is not desired, then modify network3.py
+to set the GPU flag to False.
+E:\pycharm\ML\Deeplearning\network3.py:233: UserWarning: DEPRECATION: the 'ds' parameter is not going to exist anymore as it is going to be replaced by the parameter 'ws'.
+  input=conv_out, ds=self.poolsize, ignore_border=True)
+
+
+
+Training mini-batch number 0
+Training mini-batch number 1000
+Training mini-batch number 2000
+Training mini-batch number 3000
+Training mini-batch number 4000
+Epoch 0: validation accuracy 97.60%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 97.78%
+Training mini-batch number 5000
+Training mini-batch number 6000
+Training mini-batch number 7000
+Training mini-batch number 8000
+Training mini-batch number 9000
+Epoch 1: validation accuracy 97.99%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 98.16%
+Training mini-batch number 10000
+Training mini-batch number 11000
+Training mini-batch number 12000
+Training mini-batch number 13000
+Training mini-batch number 14000
+Epoch 2: validation accuracy 98.17%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 98.42%
+Training mini-batch number 15000
+Training mini-batch number 16000
+Training mini-batch number 17000
+Training mini-batch number 18000
+Training mini-batch number 19000
+Epoch 3: validation accuracy 98.36%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 98.55%
+Training mini-batch number 20000
+Training mini-batch number 21000
+Training mini-batch number 22000
+Training mini-batch number 23000
+Training mini-batch number 24000
+Epoch 4: validation accuracy 98.29%
+Training mini-batch number 25000
+Training mini-batch number 26000
+Training mini-batch number 27000
+Training mini-batch number 28000
+Training mini-batch number 29000
+Epoch 5: validation accuracy 98.42%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 98.77%
+Training mini-batch number 30000
+Training mini-batch number 31000
+Training mini-batch number 32000
+Training mini-batch number 33000
+Training mini-batch number 34000
+Epoch 6: validation accuracy 98.19%
+Training mini-batch number 35000
+Training mini-batch number 36000
+Training mini-batch number 37000
+Training mini-batch number 38000
+Training mini-batch number 39000
+Epoch 7: validation accuracy 98.46%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 98.60%
+Training mini-batch number 40000
+Training mini-batch number 41000
+Training mini-batch number 42000
+Training mini-batch number 43000
+Training mini-batch number 44000
+Epoch 8: validation accuracy 98.67%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 98.84%
+Training mini-batch number 45000
+Training mini-batch number 46000
+Training mini-batch number 47000
+Training mini-batch number 48000
+Training mini-batch number 49000
+Epoch 9: validation accuracy 98.49%
+Training mini-batch number 50000
+Training mini-batch number 51000
+Training mini-batch number 52000
+Training mini-batch number 53000
+Training mini-batch number 54000
+Epoch 10: validation accuracy 98.39%
+Training mini-batch number 55000
+Training mini-batch number 56000
+Training mini-batch number 57000
+Training mini-batch number 58000
+Training mini-batch number 59000
+Epoch 11: validation accuracy 98.62%
+Training mini-batch number 60000
+Training mini-batch number 61000
+Training mini-batch number 62000
+Training mini-batch number 63000
+Training mini-batch number 64000
+Epoch 12: validation accuracy 98.69%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 98.68%
+Training mini-batch number 65000
+Training mini-batch number 66000
+Training mini-batch number 67000
+Training mini-batch number 68000
+Training mini-batch number 69000
+Epoch 13: validation accuracy 98.71%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 98.92%
+Training mini-batch number 70000
+Training mini-batch number 71000
+Training mini-batch number 72000
+Training mini-batch number 73000
+Training mini-batch number 74000
+Epoch 14: validation accuracy 98.66%
+Training mini-batch number 75000
+Training mini-batch number 76000
+Training mini-batch number 77000
+Training mini-batch number 78000
+Training mini-batch number 79000
+Epoch 15: validation accuracy 98.50%
+Training mini-batch number 80000
+Training mini-batch number 81000
+Training mini-batch number 82000
+Training mini-batch number 83000
+Training mini-batch number 84000
+Epoch 16: validation accuracy 98.76%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 98.91%
+Training mini-batch number 85000
+Training mini-batch number 86000
+Training mini-batch number 87000
+Training mini-batch number 88000
+Training mini-batch number 89000
+Epoch 17: validation accuracy 98.72%
+Training mini-batch number 90000
+Training mini-batch number 91000
+Training mini-batch number 92000
+Training mini-batch number 93000
+Training mini-batch number 94000
+Epoch 18: validation accuracy 98.74%
+Training mini-batch number 95000
+Training mini-batch number 96000
+Training mini-batch number 97000
+Training mini-batch number 98000
+Training mini-batch number 99000
+Epoch 19: validation accuracy 98.55%
+Training mini-batch number 100000
+Training mini-batch number 101000
+Training mini-batch number 102000
+Training mini-batch number 103000
+Training mini-batch number 104000
+Epoch 20: validation accuracy 98.71%
+Training mini-batch number 105000
+Training mini-batch number 106000
+Training mini-batch number 107000
+Training mini-batch number 108000
+Training mini-batch number 109000
+Epoch 21: validation accuracy 98.76%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 98.94%
+Training mini-batch number 110000
+Training mini-batch number 111000
+Training mini-batch number 112000
+Training mini-batch number 113000
+Training mini-batch number 114000
+Epoch 22: validation accuracy 98.77%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 99.03%
+Training mini-batch number 115000
+Training mini-batch number 116000
+Training mini-batch number 117000
+Training mini-batch number 118000
+Training mini-batch number 119000
+Epoch 23: validation accuracy 98.76%
+Training mini-batch number 120000
+Training mini-batch number 121000
+Training mini-batch number 122000
+Training mini-batch number 123000
+Training mini-batch number 124000
+Epoch 24: validation accuracy 98.72%
+Training mini-batch number 125000
+Training mini-batch number 126000
+Training mini-batch number 127000
+Training mini-batch number 128000
+Training mini-batch number 129000
+Epoch 25: validation accuracy 98.82%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 98.94%
+Training mini-batch number 130000
+Training mini-batch number 131000
+Training mini-batch number 132000
+Training mini-batch number 133000
+Training mini-batch number 134000
+Epoch 26: validation accuracy 98.76%
+Training mini-batch number 135000
+Training mini-batch number 136000
+Training mini-batch number 137000
+Training mini-batch number 138000
+Training mini-batch number 139000
+Epoch 27: validation accuracy 98.72%
+Training mini-batch number 140000
+Training mini-batch number 141000
+Training mini-batch number 142000
+Training mini-batch number 143000
+Training mini-batch number 144000
+Epoch 28: validation accuracy 98.79%
+Training mini-batch number 145000
+Training mini-batch number 146000
+Training mini-batch number 147000
+Training mini-batch number 148000
+Training mini-batch number 149000
+Epoch 29: validation accuracy 98.81%
+Training mini-batch number 150000
+Training mini-batch number 151000
+Training mini-batch number 152000
+Training mini-batch number 153000
+Training mini-batch number 154000
+Epoch 30: validation accuracy 98.82%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 99.16%
+Training mini-batch number 155000
+Training mini-batch number 156000
+Training mini-batch number 157000
+Training mini-batch number 158000
+Training mini-batch number 159000
+Epoch 31: validation accuracy 98.81%
+Training mini-batch number 160000
+Training mini-batch number 161000
+Training mini-batch number 162000
+Training mini-batch number 163000
+Training mini-batch number 164000
+Epoch 32: validation accuracy 98.80%
+Training mini-batch number 165000
+Training mini-batch number 166000
+Training mini-batch number 167000
+Training mini-batch number 168000
+Training mini-batch number 169000
+Epoch 33: validation accuracy 98.80%
+Training mini-batch number 170000
+Training mini-batch number 171000
+Training mini-batch number 172000
+Training mini-batch number 173000
+Training mini-batch number 174000
+Epoch 34: validation accuracy 98.80%
+Training mini-batch number 175000
+Training mini-batch number 176000
+Training mini-batch number 177000
+Training mini-batch number 178000
+Training mini-batch number 179000
+Epoch 35: validation accuracy 98.80%
+Training mini-batch number 180000
+Training mini-batch number 181000
+Training mini-batch number 182000
+Training mini-batch number 183000
+Training mini-batch number 184000
+Epoch 36: validation accuracy 98.81%
+Training mini-batch number 185000
+Training mini-batch number 186000
+Training mini-batch number 187000
+Training mini-batch number 188000
+Training mini-batch number 189000
+Epoch 37: validation accuracy 98.81%
+Training mini-batch number 190000
+Training mini-batch number 191000
+Training mini-batch number 192000
+Training mini-batch number 193000
+Training mini-batch number 194000
+Epoch 38: validation accuracy 98.82%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 99.15%
+Training mini-batch number 195000
+Training mini-batch number 196000
+Training mini-batch number 197000
+Training mini-batch number 198000
+Training mini-batch number 199000
+Epoch 39: validation accuracy 98.83%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 99.16%
+Training mini-batch number 200000
+Training mini-batch number 201000
+Training mini-batch number 202000
+Training mini-batch number 203000
+Training mini-batch number 204000
+Epoch 40: validation accuracy 98.83%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 99.17%
+Training mini-batch number 205000
+Training mini-batch number 206000
+Training mini-batch number 207000
+Training mini-batch number 208000
+Training mini-batch number 209000
+Epoch 41: validation accuracy 98.84%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 99.17%
+Training mini-batch number 210000
+Training mini-batch number 211000
+Training mini-batch number 212000
+Training mini-batch number 213000
+Training mini-batch number 214000
+Epoch 42: validation accuracy 98.84%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 99.16%
+Training mini-batch number 215000
+Training mini-batch number 216000
+Training mini-batch number 217000
+Training mini-batch number 218000
+Training mini-batch number 219000
+Epoch 43: validation accuracy 98.84%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 99.17%
+Training mini-batch number 220000
+Training mini-batch number 221000
+Training mini-batch number 222000
+Training mini-batch number 223000
+Training mini-batch number 224000
+Epoch 44: validation accuracy 98.84%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 99.17%
+Training mini-batch number 225000
+Training mini-batch number 226000
+Training mini-batch number 227000
+Training mini-batch number 228000
+Training mini-batch number 229000
+Epoch 45: validation accuracy 98.84%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 99.16%
+Training mini-batch number 230000
+Training mini-batch number 231000
+Training mini-batch number 232000
+Training mini-batch number 233000
+Training mini-batch number 234000
+Epoch 46: validation accuracy 98.84%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 99.15%
+Training mini-batch number 235000
+Training mini-batch number 236000
+Training mini-batch number 237000
+Training mini-batch number 238000
+Training mini-batch number 239000
+Epoch 47: validation accuracy 98.84%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 99.15%
+Training mini-batch number 240000
+Training mini-batch number 241000
+Training mini-batch number 242000
+Training mini-batch number 243000
+Training mini-batch number 244000
+Epoch 48: validation accuracy 98.84%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 99.14%
+Training mini-batch number 245000
+Training mini-batch number 246000
+Training mini-batch number 247000
+Training mini-batch number 248000
+Training mini-batch number 249000
+Epoch 49: validation accuracy 98.85%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 99.13%
+Training mini-batch number 250000
+Training mini-batch number 251000
+Training mini-batch number 252000
+Training mini-batch number 253000
+Training mini-batch number 254000
+Epoch 50: validation accuracy 98.87%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 99.13%
+Training mini-batch number 255000
+Training mini-batch number 256000
+Training mini-batch number 257000
+Training mini-batch number 258000
+Training mini-batch number 259000
+Epoch 51: validation accuracy 98.87%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 99.13%
+Training mini-batch number 260000
+Training mini-batch number 261000
+Training mini-batch number 262000
+Training mini-batch number 263000
+Training mini-batch number 264000
+Epoch 52: validation accuracy 98.88%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 99.13%
+Training mini-batch number 265000
+Training mini-batch number 266000
+Training mini-batch number 267000
+Training mini-batch number 268000
+Training mini-batch number 269000
+Epoch 53: validation accuracy 98.88%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 99.13%
+Training mini-batch number 270000
+Training mini-batch number 271000
+Training mini-batch number 272000
+Training mini-batch number 273000
+Training mini-batch number 274000
+Epoch 54: validation accuracy 98.88%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 99.13%
+Training mini-batch number 275000
+Training mini-batch number 276000
+Training mini-batch number 277000
+Training mini-batch number 278000
+Training mini-batch number 279000
+Epoch 55: validation accuracy 98.88%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 99.13%
+Training mini-batch number 280000
+Training mini-batch number 281000
+Training mini-batch number 282000
+Training mini-batch number 283000
+Training mini-batch number 284000
+Epoch 56: validation accuracy 98.88%
+This is the best validation accuracy to date.
+The corresponding test accuracy is 99.13%
+Training mini-batch number 285000
+Training mini-batch number 286000
+Training mini-batch number 287000
+Training mini-batch number 288000
+Training mini-batch number 289000
+Epoch 57: validation accuracy 98.87%
+Training mini-batch number 290000
+Training mini-batch number 291000
+Training mini-batch number 292000
+Training mini-batch number 293000
+Training mini-batch number 294000
+Epoch 58: validation accuracy 98.87%
+Training mini-batch number 295000
+Training mini-batch number 296000
+Training mini-batch number 297000
+Training mini-batch number 298000
+Training mini-batch number 299000
+Epoch 59: validation accuracy 98.87%
+Finished training network.
+Best validation accuracy of 98.88% obtained at iteration 284999
+Corresponding test accuracy of 99.13%
+
+Process finished with exit code 0
